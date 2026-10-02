@@ -27,15 +27,24 @@ Technologies
 Project Structure
 
 week9-films/
+
 *classes/
+
 *controllers/
 *includes/
+
 *templates/
+
 *Films Data.sql
+
 *film.css
+
 *films.php
+
 *editfilm.php
+
 *deletefilm.php
+
 *index.php
 
 Setup
