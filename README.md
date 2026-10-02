@@ -1,58 +1,94 @@
-# Film Reviews
+Film Reviews
 
-A small PHP application where registered reviewers can create, edit, delete, and browse film reviews. It is intended as a local-learning and portfolio project, not a production deployment.
+A PHP and MySQL web application for creating, editing, deleting, and browsing film reviews.
 
-## Requirements
+Built as a university project and refined as a software development portfolio project.
 
-- PHP 8.1 or newer (the project uses typed properties and union types)
-- MySQL 8+ or a recent MariaDB release
-- MAMP, or another PHP/MySQL local development environment
+Features
 
-The interface uses W3.CSS and the Poppins font from their public CDNs. No package manager or other third-party PHP library is required.
+* User registration and login
+* Create, edit, and delete film reviews
+* Owner-only review management
+* MySQL database integration
+* Password hashing and session authentication
+* CSRF protection and server-side validation
+* Prepared SQL statements and escaped output
+* Password reset functionality
 
-## Local setup
+Technologies
 
-1. In phpMyAdmin or the MySQL command line, import the clean starter database:
+* PHP 8.1+
+* MySQL 8+
+* HTML & CSS
+* W3.CSS
+* MAMP
+* Git & GitHub
 
-   ```sh
-   mysql -u YOUR_DATABASE_USER -p < "Films Data.sql"
-   ```
+Project Structure
 
-2. Copy the local configuration template and edit the copy only:
+week9-films/
+├── classes/
+├── controllers/
+├── includes/
+├── templates/
+├── Films Data.sql
+├── film.css
+├── films.php
+├── editfilm.php
+├── deletefilm.php
+└── index.php
 
-   ```sh
-   cp includes/config.example.php includes/config.php
-   ```
+Setup
 
-   Set your MySQL/MAMP host, optional port, username, and password in `includes/config.php`. The database name must remain `films`. This local file is ignored by Git.
+1. Clone the repository:
 
-3. Place this directory under MAMP's document root (or configure a virtual host), start PHP and MySQL, then open `index.php` in the browser.
+git clone https://github.com/sazzzz23/week9-films.git
 
-4. Register a new account before logging in. The seed reviewer is fictional and intentionally has no password.
+2. Import Films Data.sql into a MySQL database named films.
+3. Copy includes/config.example.php to includes/config.php and add your local database credentials.
+4. Place the project in your MAMP htdocs folder, start Apache and MySQL, then open:
 
-## Features and safeguards
+http://localhost/week9-films/
 
-- Registration, login, logout, and owner-only review editing/deletion
-- Passwords are hashed with PHP's `password_hash`; sessions retain only a user ID and email, never a password hash
-- Password resets use cryptographically random one-time tokens, storing only a SHA-256 token hash with a one-hour expiry
-- CSRF validation on all state-changing forms
-- Server-side validation for account fields, review fields, IDs, and ratings
-- Prepared statements plus fixed table/column allow-lists
-- Escaped HTML output and baseline security headers
+includes/config.php is excluded from Git and should never contain credentials that are committed to the repository.
 
-## Password reset limitation
+Future Improvements
 
-This project has no email delivery service. By default, requesting a reset deliberately does not reveal a reset URL. For local development only, set `show_reset_link` to `true` in the ignored `includes/config.php`; never enable that setting on a public site. A production application needs a real mailer, rate limiting, HTTPS, and account-recovery monitoring.
+Potential improvements include:
 
-## Project layout
+* Automated unit and integration tests
+* Improved responsive UI
+* Film search and filtering
+* Pagination
+* User profile management
+* Email-based password recovery
+* API integration with a film database
+* Production deployment
+* CI/CD using GitHub Actions
 
-- `index.php` — front controller and security headers
-- `classes/` — authentication and database-table abstraction
-- `controllers/` — film, registration, login, and reset workflows
-- `templates/` — escaped HTML views
-- `includes/config.example.php` — tracked configuration template
-- `Films Data.sql` — sanitized starter schema and fictional demo data
+Previews of the site
 
-## Before publishing
+[2026-10-02_20-04-44.tiff](https://github.com/user-attachments/files/32977938/2026-10-02_20-04-44.tiff)
+[2026-10-02_20-08-52.tiff](https://github.com/user-attachments/files/32977991/2026-10-02_20-08-52.tiff)
+[2026-10-02_20-08-19.tiff](https://github.com/user-attachments/files/32977984/2026-10-02_20-08-19.tiff)
+[2026-10-02_20-07-11.tiff](https://github.com/user-attachments/files/32977975/2026-10-02_20-07-11.tiff)
 
-Do not add `includes/config.php`, `.env` files, database exports containing live accounts, or logs to Git. The included `.gitignore` excludes those files. This directory was supplied without a `.git` repository, so its prior Git history could not be reviewed; inspect any repository history separately before publishing.
+
+Limitations
+
+This is a university/portfolio project rather than a production application.
+
+Some production features are intentionally outside the scope of the project, including:
+
+* Email delivery for password resets
+* Production hosting
+* Automated deployment
+* Comprehensive automated test coverage
+* Production monitoring and logging
+* Rate limiting
+* Full production-grade account recovery
+
+Author
+
+Sabir Uddin
+GitHub: @sazzzz23
