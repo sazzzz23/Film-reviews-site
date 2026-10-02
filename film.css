@@ -1,0 +1,118 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    font-size: 16px;
+}
+
+.w3-main {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    padding-bottom: 24px;
+}
+
+blockquote {
+    background: #fafafa;
+    border-left: 5px solid #f44336;
+    border-radius: 6px;
+    margin: 0 0 16px;
+    padding: 12px 16px;
+}
+
+.stars {
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+.star {
+    color: #b0b0b0;
+    font-size: 1.05em;
+}
+
+.star.filled {
+    color: #f5c518;
+}
+
+.pagination {
+    align-items: center;
+    clear: both;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    width: 100%;
+}
+
+.page-prev,
+.page-next {
+    background: #fff;
+    border: 2px solid #333;
+    color: #333;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    padding: 6px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.page-next {
+    margin-left: auto;
+}
+
+.errors {
+    color: #b00020;
+}
+
+.nav-form {
+    margin: 0;
+}
+
+.registration-form {
+    max-width: 32rem;
+    width: 100%;
+}
+
+.registration-field {
+
+    display: block;
+
+    width: 100%;
+
+    margin-bottom: 18px;
+
+}
+
+
+.registration-field label {
+    display: block;
+    font-weight: 600;
+}
+
+.registration-input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 6px;
+}
+
+.registration-submit {
+    display: block;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 600px) {
+    .registration-form {
+        max-width: none;
+    }
+
+    .registration-submit {
+        width: 100%;
+    }
+}

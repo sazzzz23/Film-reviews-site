@@ -1,0 +1,19 @@
+# Local credentials and environment files
+includes/config.php
+.env
+.env.*
+!.env.example
+
+# OS and editor files
+.DS_Store
+**/.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Runtime and backup files
+*.log
+logs/
+*.bak
+*.backup
+*.tmp
