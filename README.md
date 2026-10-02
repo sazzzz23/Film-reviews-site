@@ -27,16 +27,16 @@ Technologies
 Project Structure
 
 week9-films/
-├── classes/
-├── controllers/
-├── includes/
-├── templates/
-├── Films Data.sql
-├── film.css
-├── films.php
-├── editfilm.php
-├── deletefilm.php
-└── index.php
+*classes/
+*controllers/
+*includes/
+*templates/
+*Films Data.sql
+*film.css
+*films.php
+*editfilm.php
+*deletefilm.php
+*index.php
 
 Setup
 
@@ -52,6 +52,8 @@ http://localhost/week9-films/
 
 includes/config.php is excluded from Git and should never contain credentials that are committed to the repository.
 
+
+
 Future Improvements
 
 Potential improvements include:
@@ -66,12 +68,20 @@ Potential improvements include:
 * Production deployment
 * CI/CD using GitHub Actions
 
+
 Previews of the site
 
-[2026-10-02_20-04-44.tiff](https://github.com/user-attachments/files/32977938/2026-10-02_20-04-44.tiff)
-[2026-10-02_20-08-52.tiff](https://github.com/user-attachments/files/32977991/2026-10-02_20-08-52.tiff)
-[2026-10-02_20-08-19.tiff](https://github.com/user-attachments/files/32977984/2026-10-02_20-08-19.tiff)
-[2026-10-02_20-07-11.tiff](https://github.com/user-attachments/files/32977975/2026-10-02_20-07-11.tiff)
+home page
+<img width="2836" height="1212" alt="image" src="https://github.com/user-attachments/assets/7a7e1e4d-e51b-4311-8b28-3dd267694c2a" />
+
+review list page
+<img width="2832" height="1432" alt="image" src="https://github.com/user-attachments/assets/b4437cad-ec08-463b-8015-e6e9191158f4" />
+
+register page
+<img width="2848" height="1436" alt="image" src="https://github.com/user-attachments/assets/a9f8b725-597f-408f-9615-4f0d9c94ddb4" />
+
+login page
+<img width="2890" height="1224" alt="image" src="https://github.com/user-attachments/assets/e9e882b9-3843-43e1-aa9f-cd25c4bab34a" />
 
 
 Limitations
